@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #060606;
+  color: white;
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #060606;
+  border: 1px solid #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .auth-links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 255px;
+}
+
+.navbar .auth-links li {
+  margin-left: 22px;
+}
+
+a {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+a.active {
+  color: white;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Roboto';
+  color: #dbdbdb;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.test {
+  width: 23em;
+  border: none;
+  border-top: 1px solid #787878;
+  animation: expand 1.9s ease-in-out infinite alternate;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23em;
+  }
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  width: 770px;
+  height: 20vh;
+  text-align: center;
+  color: #e4e4e4;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+p a.review {
+  color: #fff9f9;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #060606;
+    border-color: #282828;
+    border: 1px solid #282828;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .auth-links {
+    display: flex;
+    margin-right: 15em;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 47px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    left: 167px;
+    top: 50px;
+    position: relative;
+  }
+
+  .container {
+    padding: 10px;
+    position: fixed;
+    margin-top: 50px;
+  }
+
+  p {
+    width: 340px;
+    font-size: 17px;
+  }
+}

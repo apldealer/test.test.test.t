@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #060606;
+  color: white;
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #060606;
+  border: 1px solid #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .auth-links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 255px;
+}
+
+.navbar .auth-links li {
+  margin-left: 22px;
+}
+
+a {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+a.active {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: -602px;
+  top: 65px;
+}
+
+.social-icons .social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-icons .icon {
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: rgba(255, 255, 255, 0.848);
+  margin-right: 10px;
+}
+
+.social-icons .icon:hover {
+  color: #888888;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+}
+
+h1 {
+  color: white;
+  font-size: 39px;
+  font-weight: 100;
+  margin-top: 199px;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  width: 20em;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: 230px;
+}
+
+.explain {
+  font-size: 24px;
+  width: 20em;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.shop-now-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 27px;
+}
+
+.shop-now-button button {
+  color: white;
+  border: none;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-button button:hover {
+  background-color: white;
+  color: #000;
+}
+
+.discount-text {
+  color: #ffffffc2;
+  text-align: center;
+  margin-top: 149px;
+  bottom: 50px;
+  width: 890px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #060606;
+    border-color: #282828;
+    border: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .auth-links {
+    display: flex;
+    margin-right: 15em;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 47px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    left: 167px;
+    top: 50px;
+    position: relative;
+  }
+
+  .social-icons {
+    left: 10px;
+    top: 240px;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-icons .social-item {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .social-text {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .shop-now-button button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .discount-text {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #060606;
+  color: white;
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #060606;
+  border: 1px solid #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .auth-links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 255px;
+}
+
+.navbar .auth-links li {
+  margin-left: 22px;
+}
+
+a {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(168, 168, 168);
+}
+
+a.active {
+  color: white;
+}
+
+.container {
+  position: fixed;
+  top: 58px; /* Adjust this value to the height of the navbar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto; /* Allows scrolling if content overflows */
+  background-color: #060606; /* Ensure the background color is the same */
+  padding: 20px; /* Optional padding for content */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 39px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 14px;
+}
+
+.airpods {
+  width: 20em;
+  height: 20em;
+  left: 17em;
+  overflow: hidden;
+  position: relative;
+  bottom: 7em;
+}
+
+.info-card-container {
+  width: 22em;
+  position: relative;
+  left: 36.3em;
+  height: 8.9em;
+  bottom: 22em;
+  padding-top: 9px;
+  transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.button-container {
+  gap: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.buy {
+  border: 1px solid rgb(214, 214, 214);
+  width: 63px;
+  height: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(10, 247, 10, 0.721);
+  font-family: 'Roboto';
+  cursor: pointer;
+  top: 10.1px;
+  position: relative;
+}
+
+.Back {
+  border: none;
+  border-radius: 6px;
+  width: 63px;
+  height: 25px;
+  overflow: auto; 
+  position: relative;
+  color: rgb(255, 255, 255);
+  background-color: rgba(10, 247, 10, 0);
+  font-family: 'Roboto';
+  top: 10.1px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  right: 5px;
+}
+
+.buy:hover ~ .info-card-container,
+.info-card-container:hover {
+  transform: translateY(-8px); /* Adjust the translation distance as needed */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .airpods {
+    width: 15em;
+    height: 15em;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  .info-card-container {
+    width: 20em;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #060606;
+    border-color: #282828;
+    border: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .auth-links {
+    display: flex;
+    margin-right: 15em;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 47px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    left: 167px;
+    top: 50px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding-top: 60px;
+  }
+
+  .airpods {
+    width: 12em;
+    height: 12em;
+    left: 66px;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  .info-card-container {
+    width: 18em;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    top: 0;
+  }
+}
